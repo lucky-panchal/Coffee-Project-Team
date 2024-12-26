@@ -30,6 +30,9 @@ const maximum = () => {
      <button id="no1" className='count' onClick={maximum}>+</button>
       <h1 id="numbercolor">{first}</h1>
       <button id="no2" className='count1' onClick={minimum}>-</button>
+
+
+    
      </>
     );
 }

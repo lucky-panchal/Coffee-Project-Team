@@ -26,6 +26,7 @@ function App() {
       <button onClick={add}>Sum</button>
       <p>Result= {result}</p>
     </div>
+    
   );
 }
 export default App;

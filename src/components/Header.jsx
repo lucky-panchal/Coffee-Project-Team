@@ -7,5 +7,4 @@ const Header = ({Username}) => {
     </div>
   )
 }
-
 export default Header

@@ -18,7 +18,6 @@ function App() {
     }
     return color;
   };
-
   return (
     <div style={{ backgroundColor: randomcolor() }}>
       <input type="number" value={num1} onChange={(e) => setnum1(e.target.value)} />

@@ -8,4 +8,4 @@ const Footer = ({username}) => {
     </div>
   )
 }
-export default Footer
+export default Footer;

@@ -36,5 +36,4 @@ const maximum = () => {
      </>
     );
 }
-
 export default Counter

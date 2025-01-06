@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./components/Header";
+import Addition from "./components/Addition";
 
 function App() {
   return (
    <>
-   <Header Username="lucky"/>
+<Addition/> 
    </>
+
   );
 }
 
 export default App;
- 

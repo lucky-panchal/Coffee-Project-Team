@@ -1,10 +1,10 @@
 import React from "react";
-import Addition from "./components/Addition";
+import Filter from "./components/Filter";
 
 function App() {
   return (
    <>
-<Addition/> 
+   <Filter/>
    </>
 
   );

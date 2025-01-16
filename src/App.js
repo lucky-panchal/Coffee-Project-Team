@@ -1,10 +1,9 @@
 import React from "react";
-import Filter from "./components/Filter";
-
+import Todo from "./components/Todo";
 function App() {
   return (
    <>
-   <Filter/>
+   <Todo/>
    </>
 
   );

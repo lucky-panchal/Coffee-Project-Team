@@ -17,7 +17,7 @@ const Todo = () => {
 
   
 return (
-  <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
+  <div className="h-screen bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ...">
   <div className="flex flex-col items-center space-y-4 p-6">
     <div className="flex space-x-2">
       <input
@@ -28,23 +28,23 @@ return (
         className="w-full md:w-96 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
       />
       <button
-        className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-bold py-2 px-4 rounded-full"
+        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-bold py-2 px-4 rounded-full"
         onClick={data}
       >
         Add
       </button>
     </div>
-    <ul className="w-full md:w-96 space-y-2">
+    <ul className="border bg-purple-500 md:w-96 space-y-2">
       {todoList.map((item, index) => (
         <li
           key={index}
           className="flex justify-between items-center bg-gray-100 p-2 rounded-lg shadow"
         >
-          <span className="text-gray-700">
+          <span className=" text-gray-700">
             {index + 1}. {item}
           </span>
           <button
-            className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-bold py-2 px-4 rounded"
+            className=" bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-bold py-2 px-4 rounded"
             onClick={() => removeTodo(index)}
           >
             Delete

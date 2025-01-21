@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import "./Counter.css"
+import { Link } from 'react-router-dom'
 function Counter() {
 // eslint-disable-next-line react-hooks/rules-of-hooks
 let [first, setfirst ] = useState(0)
@@ -31,8 +32,9 @@ const maximum = () => {
       <h1 id="numbercolor">{first}</h1>
       <button id="no2" className='count1' onClick={minimum}>-</button>
 
-
-    
+<h1>
+    <Link to='/assignment'> Assignment</Link>
+    </h1>
      </>
     );
 }

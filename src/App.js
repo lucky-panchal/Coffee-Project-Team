@@ -15,12 +15,7 @@ function App() {
 <Route path="/form" element={<Form/>}/> 
 <Route path="/filter" element={<Filter/>}/> 
 <Route path="/counter" element={<Counter/>}/> 
-
-
-
-
  </Routes>
- 
  </BrowserRouter>
    </>
 

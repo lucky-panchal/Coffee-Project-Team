@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Assignment = () => {
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
@@ -62,9 +62,9 @@ const Assignment = () => {
                 <button id="submit" className="w-full bg-500 text-green py-2 rounded hover:bg-red-900" type="submit"><strong>Submit</strong></button>
             </form>
             
-
-
-
+            <h1>
+<Link to='/counter'>counter</Link>
+</h1>
 
         </div>
     );

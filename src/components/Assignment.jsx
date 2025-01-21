@@ -18,7 +18,7 @@ const Assignment = () => {
     };
 
     return (
-        <div className="h-screen h-full bg-gradient-to-r from-yellow-500 from-10% via-sky-500 via-50% to-hue-500 to-80% ...">
+        <div className="h-screen h-full bg-gradient-to-r from-purple-500 from-10% via-blue-500 via-50% to-yellow-500 to-90% ...">
 
             <form onSubmit={SubmitFinal} className=" h-screen p-6 rounded shadow-md  space-y-4">
                 <div className='flex space-x-2'>

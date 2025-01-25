@@ -1,12 +1,14 @@
-import React  from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import './Signup.css'; 
 
 function Signup() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-const navigate = useNavigate();
+  const navigate = useNavigate();
+
   const onSubmit = async (data) => {
     try {
       const res = await fetch("http://localhost:3030/register", {
@@ -23,6 +25,8 @@ const navigate = useNavigate();
         toast.success(`${resData.message}`, {
           position: "top-right"
         });
+       
+        navigate('/login'); 
       } else {
         toast.error(`${resData.error}`, {
           position: "top-right"
@@ -30,12 +34,14 @@ const navigate = useNavigate();
       }
     } catch (error) {
       console.error('Invalid API or no internet connection');
+      toast.error('An error occurred. Please try again later.', {
+        position: "top-right"
+      });
     }
   }
 
   return (
-    <div >
-      <h1 >Sign Up</h1>
+    <div className="container"> 
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register('email', {
@@ -47,7 +53,6 @@ const navigate = useNavigate();
           })}
           type="text"
           placeholder="Email..."
-          
         />
         {errors.email && <p>{errors.email.message}</p>}
 
@@ -61,9 +66,9 @@ const navigate = useNavigate();
           })}
           type="password"
           placeholder="Password..."
-         
         />
-        {errors.password && <p >{errors.password.message}</p>}
+        {errors.password && <p>{errors.password.message}</p>}
+
         <span onClick={() => navigate('/login')} >Do You Have Already An Account?</span>
         <button type="submit">
           Register

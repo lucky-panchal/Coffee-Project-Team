@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from 'react-router-dom'
+import './Signin.css'; 
 
 function Signin() {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -27,7 +28,8 @@ function Signin() {
             if (resData.message) {
                 toast.success(`${resData.message}`, {
                     position: "top-right"
-                });
+                }); 
+                
             } else {
                 toast.error(`${resData.error}`, {
                     position: "top-right"
@@ -41,7 +43,7 @@ function Signin() {
 
 
     return (
-        <div>
+        <div className="container">
             <h1 >Sign In</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input

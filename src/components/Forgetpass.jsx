@@ -10,7 +10,7 @@ const Forgetpass = () => {
   
   useEffect(() => {
     const fetchUserId = async () => {
-      const email = 'luckykanti31122006@gmail.com'; 
+      const email = 'anmol@gmail.com'; 
       const response = await fetch(`http://localhost:3030/validate?email=${email}`);
       const data = await response.json();
       if (response.ok && data.userId) {
@@ -44,8 +44,11 @@ const Forgetpass = () => {
         toast.error("Old password is incorrect", { position: "top-right" });
         return;
       }
-
-      toast.success("Old password is correct", { position: "top-right" });
+      if (checkOldPasswordData.isValid) {
+        toast.success("Old password is correct", { position: "top-right" });
+        return;
+      }
+      
 
      
       const updatePasswordRes = await fetch(`http://localhost:3030/update/${userId}`, {

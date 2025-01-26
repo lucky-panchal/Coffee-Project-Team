@@ -7,7 +7,7 @@ const Forgetpass = () => {
   const { register, handleSubmit, formState: { errors }, watch } = useForm();
   const [userId, setUserId] = useState(); 
 
-  
+
   useEffect(() => {
     const fetchUserId = async () => {
       const email = 'anmol@gmail.com'; 
@@ -16,10 +16,10 @@ const Forgetpass = () => {
       if (response.ok && data.userId) {
         setUserId(data.userId);
       } else {
-        toast.error(data.error || "User  not found", { position: "top-right" });
+        toast.error(data.error || "User not found", { position: "top-right" });
       }
     };
-
+    
     fetchUserId();
   }, []);
 
@@ -74,7 +74,7 @@ const Forgetpass = () => {
   const newPassword = watch('newpass');
 
   return (
-    <div>
+    <div>    
       <h1>Forgot Password</h1><br />
       <form onSubmit={handleSubmit(onSubmit)}>
         <input 

@@ -44,12 +44,6 @@ const Forgetpass = () => {
         toast.error("Old password is incorrect", { position: "top-right" });
         return;
       }
-      if (checkOldPasswordData.isValid) {
-        toast.success("Old password is correct", { position: "top-right" });
-        return;
-      }
-      
-
      
       const updatePasswordRes = await fetch(`http://localhost:3030/update/${userId}`, {
         method: "PUT",

@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './Validate.css';
-
 const Validate = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate();

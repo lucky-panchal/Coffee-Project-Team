@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, BrowserRouter, } from 'react-router-dom'
+import './App.css';
 
 import Signin from "./components/Signin ";
 import Signup from "./components/Signup";
@@ -11,14 +12,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          
-          <Route path="/" element={<Home />} />
-          <Route path="/validate" element={<Validate />} />
-          <Route path="/register" element={<Signup />} />
-          <Route path="/login" element={<Signin />} />
-          <Route path="/forgotpass" element={<Forgetpass />} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/validate" element={<Validate />} />
+            <Route path="/register" element={<Signup />} />
+            <Route path="/login" element={<Signin />} />
+            <Route path="/forgotpass" element={<Forgetpass />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
 

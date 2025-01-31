@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+ import React from 'react'
+ import './Home.css'
+ import bgImg from './images/bg-img.jpg'
+import Main from './main/Main';
+ 
+ function Home() {
+   return (
+     <div className='home-contain' style={{backgroundImage: `url(${bgImg})`}}>
+        <div className="content">
+            <div className="navbar">
+              <div className="menu">
+                <button>link 1</button>
+                <button>link 1</button>
+                <button>link 1</button>
+                <button>link 1</button>
+              </div>
+              <h1>Coldheart</h1>
+              <div className="user-acc">
+                and
+              </div>
+            </div>
+            <Main/>
+        </div>
+     </div>
+   )
+ }
+ 
+ export default Home;
+=======
 import React, { useState } from 'react'
 import './Home.css'
 import bgImg from './images/bg-img.jpg'
@@ -76,3 +106,4 @@ function Home() {
 }
 
 export default Home;
+>>>>>>> acfba85354ff62018ed2a0bea759c53e9b5090c9

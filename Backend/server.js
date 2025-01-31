@@ -12,7 +12,11 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {
+<<<<<<< HEAD
  res.send("hello , this is get request...");
+=======
+ res.send("hello , lux here...");
+>>>>>>> acfba85354ff62018ed2a0bea759c53e9b5090c9
 })
 
 app.post('/check-password', async (req, res) => {

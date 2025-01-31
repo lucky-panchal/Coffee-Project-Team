@@ -1,4 +1,3 @@
-
 # Coffee Shop Website
 
 A Website That Has A Basic Features Of Coffee Shop And Fully Dynamic Website 

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-
-.home-contain{
-=======
 .home-contain {
->>>>>>> acfba85354ff62018ed2a0bea759c53e9b5090c9
   width: 100%;
   height: 100%;
   display: flex;
@@ -12,17 +7,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-<<<<<<< HEAD
-  color: white;
-} 
-
-.home-contain::before{
-=======
   color: rgb(94, 18, 18);
 }
 
 .home-contain::before {
->>>>>>> acfba85354ff62018ed2a0bea759c53e9b5090c9
   content: "";
   width: 100%;
   height: 100%;
@@ -35,11 +23,7 @@
   z-index: 1;
 }
 
-<<<<<<< HEAD
-.content{
-=======
 .content {
->>>>>>> acfba85354ff62018ed2a0bea759c53e9b5090c9
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -50,11 +34,7 @@
   text-align: center;
 }
 
-<<<<<<< HEAD
-.navbar{
-=======
 .navbar {
->>>>>>> acfba85354ff62018ed2a0bea759c53e9b5090c9
   width: 100%;
   height: 10%;
   display: flex;
@@ -62,9 +42,6 @@
   justify-content: center;
 }
 
-<<<<<<< HEAD
-
-=======
 .navbar .menu {
   position: relative;
   width: 50%;
@@ -271,4 +248,3 @@
   fill: yellow;
   transform: scale(1.5);
 }
->>>>>>> acfba85354ff62018ed2a0bea759c53e9b5090c9

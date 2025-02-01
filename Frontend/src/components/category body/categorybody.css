@@ -1,0 +1,12 @@
+
+.category-contain{
+    width: 30%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 20px;
+}

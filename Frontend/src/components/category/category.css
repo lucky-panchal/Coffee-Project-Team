@@ -1,0 +1,34 @@
+.category {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    color: #Fffdd0;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+
+.category:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.category .category-img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.category .category-img img {
+    width: 100%;
+    height: 100%;
+}

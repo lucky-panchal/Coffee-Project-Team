@@ -43,7 +43,7 @@ function Home() {
             <div className="glass-contain">
               <div className="other-btn">
                 <div className="search-bar">
-                  <input type="text" placeholder='Serach...' />
+                  <input type="text" placeholder='Search...' />
                 </div>
                 <div className="notification">
 

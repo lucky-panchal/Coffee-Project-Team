@@ -19,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0px);
   z-index: 1;
 }
 
@@ -57,7 +57,7 @@
   height: 40px;
   border: none;
   outline: none;
-  color: white;
+  color: #Fffdd0;
   background: rgba(0, 0, 0, 0.24);
   border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -71,7 +71,7 @@
 .menu .filtericon{
   position: absolute;
   left: 30px;
-  fill: white;
+  fill: #Fffdd0;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -108,7 +108,7 @@
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
   border: 1px solid rgba(255, 255, 255, 0.555);
-  color: white;
+  color: #Fffdd0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -133,7 +133,7 @@
   height: 40%;
   border-radius: 20px;
   right: 0;
-  background: white;
+  background: #Fffdd0;
 }
 
 .other-btn .search-bar{
@@ -155,16 +155,16 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 2px solid rgb(255, 255, 255);
-  color: white;
+  border: 2px solid #Fffdd0;
+  color: #Fffdd0;
 }
 
 .other-btn .search-bar input::placeholder{
-  color: white;
+  color: #Fffdd0;
 }
 
 .navbar .user-acc .glass-contain svg{
-  fill: white;
+  fill: #Fffdd0;
   transition: 0.3s;
 }
 
@@ -192,7 +192,7 @@
   height: 20px;
   border-radius: 50%;
   background: rgb(239, 43, 43);
-  color: white;
+  color: #Fffdd0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,7 +219,7 @@
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
   border: 1px solid rgba(255, 255, 255, 0.555);
-  color: white;
+  color: #Fffdd0;
   display: flex;
   border-radius: 10px;
   flex-direction: column;

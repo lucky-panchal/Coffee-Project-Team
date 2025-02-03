@@ -5,7 +5,8 @@
 /.pnp
 .pnp.js
 /bun.lockb
-
+/package.json
+/package-lock.json
 # testing
 /coverage
 

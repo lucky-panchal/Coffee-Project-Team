@@ -1,22 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './categorybody.css'
 import Category from '../category/Category'
+import { MyContext } from '../../context api/contextApi';
+
 
 function Categorybody() {
+
+  const categoryObj = useContext(MyContext);
   return (
-    <div className='category-contain'>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
-      <Category/>
+    <div className='category-contain' >
+      {categoryObj.map((elem) => {
+        return <Category key={elem.index} img={elem.image} title={elem.title}/>
+      })}
     </div>
   )
 }

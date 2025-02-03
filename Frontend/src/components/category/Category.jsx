@@ -1,14 +1,13 @@
 import React from 'react'
 import './category.css'
-import hotCoffee from '../images/hot-coffee.png'
 
-function Category() {
+function Category({img, title}) {
   return (
     <div className='category'>
       <div className="category-img">
-        <img src={hotCoffee} alt="category" />
+        <img src={img} alt="category" />
       </div>
-      <span>hot coffee</span>
+      <span>{title}</span>
     </div>
   )
 }

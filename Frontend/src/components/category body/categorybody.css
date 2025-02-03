@@ -1,18 +1,17 @@
-
-.category-contain{
-    width: 25%;
+.category-contain {
+    width: 40%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 30px;
     overflow-y: scroll;
-        /*Fixed Code With Copilot To Support Scrollbar In All Browsers.. */
-        /*COMPLETE:*/
-    scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    }
-    .category-contain::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
+    padding: 30px 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.category-contain::-webkit-scrollbar {
+    display: none;
     padding: 20px;
 }

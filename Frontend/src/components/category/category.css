@@ -18,7 +18,9 @@
 }
 
 .category:hover{
-    background: rgba(0, 0, 0, 0.603);
+    border: 3px solid rgb(221, 201, 157) ;
+    box-shadow: 0px 0px 15px rgb(221, 201, 157) , 0px 0px 15px rgb(221, 201, 157)  inset;
+    background: rgba(77, 59, 59, 0.603);
 }
 
 .category:hover{

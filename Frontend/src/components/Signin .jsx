@@ -43,7 +43,7 @@ function Signin() {
 
 
     return (
-        <div className="container">
+        <div className="signup">
             <h1 >Sign In</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input

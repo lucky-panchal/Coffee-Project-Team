@@ -35,16 +35,17 @@
 
 .filter-box .filter-nav .goBackBtn{
     position: absolute;
-    left: 15px;
+    right: 20px;
     cursor: pointer;
 }
 
 .goBackBtn svg{
+    fill: black;
     transition: 0.3s;
 }
 
 .filter-nav .goBackBtn svg:hover{
     transition: 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.3);
     fill: rgb(151, 13, 13);
 }

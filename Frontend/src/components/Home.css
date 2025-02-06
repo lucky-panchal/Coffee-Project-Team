@@ -26,11 +26,11 @@
 .content {
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -144,6 +144,10 @@
   justify-content: center;
 }
 
+.search-icon{
+  display: none;
+}
+
 .other-btn .search-bar input{
   width: 100%;
   height: 40px;
@@ -184,6 +188,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hamburger{
+  display: none;
 }
 
 .glass-contain .other-btn .notification span, .glass-contain .other-btn .cart span{
@@ -228,6 +236,7 @@
   overflow: hidden;
   text-transform: capitalize;
   cursor: pointer;
+  z-index: 10;
 }
 
 .acc-option span{
@@ -247,4 +256,85 @@
   transition: 0.3s;
   fill: yellow;
   transform: scale(1.5);
+}
+
+
+
+/*! Extra small devices (phones,  up to 576px) */
+@media (max-width: 576px) {
+
+  .navbar {
+    height: 8%;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .other-btn .search-bar{
+    display: none;
+  }
+
+  .logo-name{
+    font-size: 1.5rem;
+  }
+
+  .navbar .user-acc {
+    width: 70%;
+    padding: 10px 5px;
+  }
+  
+  .user-acc .glass-contain{
+    border-radius: 5px;
+    padding: 0px;
+  }
+
+  .glass-contain .other-btn{
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navbar .user-acc .glass-contain svg:hover {
+    fill: #Fffdd0;
+    transform: none;
+  }
+
+  .user-acc .acc{
+    display: none;
+  }
+
+  .other-btn::before{
+    display: none;
+  }
+
+  .search-icon{
+    display: block;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+}
+
+/*! Small devices (phones, 577px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Your styles here */
+}
+
+/*! Medium devices (tablets, 769px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Your styles here */
+}
+
+/*! Large devices (desktops, 993px - 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Your styles here */
+}
+
+/*! Extra large devices (large desktops, above 1200px) */
+@media (min-width: 1201px) {
+  /* Your styles here */
 }

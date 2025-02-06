@@ -7,6 +7,36 @@ import { ImgCounter } from './context api/contextApi';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//! Preventing Zoom on Ctrl + or Ctrl -
+document.addEventListener('keydown', function(event) {
+  if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '0')) {
+      event.preventDefault();
+  }
+});
+
+//! Preventing Zoom on Pinch Gestures
+document.addEventListener('wheel', function(event) {
+  if (event.ctrlKey) {
+      event.preventDefault();
+  }
+}, { passive: false });
+
+document.addEventListener('gesturestart', function(event) {
+  event.preventDefault();
+});
+
+// document.addEventListener("touchstart", function (event) {
+//   event.preventDefault();
+// }, { passive: false });
+
+document.addEventListener("touchstart", function (event) {
+  if (event.target.tagName === "DIV") {
+      event.target.blur(); // Removes focus without blocking hover
+  }
+});
+
+
 root.render(
   <React.StrictMode>
     <ImgCounter>

@@ -26,16 +26,6 @@ document.addEventListener('gesturestart', function(event) {
   event.preventDefault();
 });
 
-// document.addEventListener("touchstart", function (event) {
-//   event.preventDefault();
-// }, { passive: false });
-
-document.addEventListener("touchstart", function (event) {
-  if (event.target.tagName === "DIV") {
-      event.target.blur(); // Removes focus without blocking hover
-  }
-});
-
 
 root.render(
   <React.StrictMode>

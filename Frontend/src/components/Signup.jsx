@@ -23,8 +23,12 @@ function Signup() {
 
       if (resData.message) {
         toast.success(`${resData.message}`, {
-          position: "top-right"
+          position: "top-left"
         });
+        
+
+
+
 
         navigate('/login');
       } else {
@@ -33,7 +37,6 @@ function Signup() {
         });
       }
     } catch (error) {
-      console.error('Invalid API or no internet connection');
       toast.error('An error occurred. Please try again later.', {
         position: "top-right"
       });
@@ -47,7 +50,7 @@ function Signup() {
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
-className="userbox"
+            className="userbox"
             {...register('email', {
               required: "Email is required",
               pattern: {
@@ -61,7 +64,7 @@ className="userbox"
           {errors.email && <p>{errors.email.message}</p>}
 
           <input
-          className="userbox"
+            className="userbox"
             {...register('password', {
               required: "Password is required",
               minLength: {
@@ -78,9 +81,11 @@ className="userbox"
           <button type="submit">
             Register
           </button>
-          <ToastContainer />
+
         </form>
+
       </div>
+      <ToastContainer />
     </>
 
   );

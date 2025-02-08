@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Home.css'
-import bgImg from './images/bg-img.jpg'
+// import bgImg from './images/bg-img.jpg'
 import Main from './main/Main';
 import Filter from './filter/Filter';
 import { useNavigate } from 'react-router-dom';
@@ -14,12 +14,14 @@ function Home() {
     const filter = document.querySelector('.filter-contain');
     if (filter.style.display === 'none') {
       filter.style.display = 'flex';
+      document.title = "Filter";
     } else {
       filter.style.display = 'none';
     }
   }
 
   const handleAccOption = () => {
+
     if (box === "none") {
       setBox("flex");
     } else {
@@ -28,7 +30,7 @@ function Home() {
   }
 
   return (
-    <div className='home-contain' style={{ backgroundImage: `url(${bgImg})` }}>
+    <div className='home-contain'>
       <div className="content">
         <div className="navbar">
           <div className="menu">

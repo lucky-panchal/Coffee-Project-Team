@@ -13,12 +13,14 @@ function Filter() {
       filter.style.display = 'flex';
     } else {
       filter.style.display = 'none';
+      document.title = "ColdHeart"
     }
   }
 
   const handleBack = () => {
     const filter = document.querySelector('.filter-contain');
     filter.style.display = 'none';
+    document.title = "ColdHeart"
   }
 
   return (

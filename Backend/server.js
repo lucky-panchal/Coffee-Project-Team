@@ -1,7 +1,7 @@
 const express = require ('express');
 const app= express();
 var cors = require('cors')
-const PORT = 3030;
+const port = 3030;
 const bcrypt = require ('bcrypt')
 const connectDB= require('./config/db');
 const UserModel = require('./model/userSchema');
@@ -145,6 +145,6 @@ app.delete('/delete/:_id',   async (req, res) => {
 //     }
 // })
 
-    app.listen(PORT, () => {
+    app.listen(port, () => {
       console.log("Server is running successfully");
     })
